@@ -1,0 +1,28 @@
+import java.util.*;
+public class Array_creation{
+    public static void main(String[] args) {
+        // Creation of Array
+        int marks[] = new int[100];
+        Scanner sc = new Scanner(System.in);
+        // Input
+        marks[0] = sc.nextInt(); // Let OOPS
+        marks[1] = sc.nextInt(); // Let Big Data
+        marks[2] = sc.nextInt(); // Let Machine Learning
+
+        // Output
+        System.out.println("OOPS = " + marks[0] + "\nBig Data = "+ marks[1] + "\nMachine Learning  = "+ marks[2]);
+
+        //Update
+        System.out.println("Updation in marks");
+        marks[2] = marks[2]+ 2 ;
+        System.out.println("OOPS = " + marks[0] + "\nBig Data = "+ marks[1] + "\nMachine Learning marks After change  = "+ marks[2]);
+
+        // Percentage
+        int percentage=((marks[0]+marks[1]+ marks[2])*100)/300;
+        System.out.println("Percentage = " + percentage + "%");
+        //Length of a Array
+         int p =marks.length;
+        System.out.println(p);
+
+    }
+ }
